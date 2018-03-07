@@ -21,12 +21,11 @@ endif
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<
 
 .PHONY: all
-all: $(OUT) 
+all: $(OUT)
 
 .PHONY: install
 install: all installdirs
 	$(INSTALL) $(OUT) $(DESTDIR)$(PREFIX)/lib/openvpn/plugins/$(OUT)
-
 
 .PHONY: installdirs
 installdirs: 
