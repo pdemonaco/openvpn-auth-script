@@ -1,6 +1,6 @@
 # Compilation Arguments
 CC ?= cc
-CFLAGS += -Wall -Wextra -Wformat-security -D_FORTIFY_SOURCE=2
+CFLAGS ?= -Wall -Wextra -Wformat-security
 CFLAGS += -std=c99 -D_POSIX_C_SOURCE=200809L
 LDFLAGS += -fPIC -shared
 
